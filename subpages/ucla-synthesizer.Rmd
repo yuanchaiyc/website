@@ -18,17 +18,23 @@ suppressMessages(library(knitr))
 
 [Back to Yuan Chai's tutorial page](../tutorial.html)
 
-### What can you use UCLA voice synthesizer for?
+### What is UCLA Voice Synthesizer?
+* A tool for manipulating the source of sound developed by Jody Kreiman, Bruce R. Gerratt, and Norma Antoñanzas-Barroso.
+* Citation: Kreiman, J., Gerratt, B. R., & Antonanzas-Barroso, N. (2006). Analysis and synthesis of pathological voice quality. Unpublished users’ manual.
+
+
+### What can you use UCLA Voice Synthesizer for?
 
 * To reverse a filtered sound to its source
-* To manipulate the spectral tilt and HNR
+* To manipulate the source: such as the spectral tilt and noise
+* To manipulate the filter: such as formant frequency and bandwidth
 * To flip the waveform (horizontally or vertically)
 * More to be discovered
 
 
 ### Where to find it?
 
-* Program: [here](https://www.uclahealth.org/departments/head-neck-surgery/research/research-labs/bureau-glottal-affairs/software)(Google might regard it as a malware and prohibit you from downloading it. Try other browsers.)
+* Program: [here](https://www.uclahealth.org/departments/head-neck-surgery/research/research-labs/bureau-glottal-affairs/software) (Google might regard it as a malware and prohibit you from downloading it. Try other browsers.)
 * Manual: [here](https://www.uclahealth.org/sites/default/files/documents/Analysis%20and%20Synthesis%20of%20Pathological%20Voice%20Quality.pdf)
 * Example sound: [here](https://yuanchaiyc.github.io/website/file/ucla_synthesizer_sound/vowel_a_10000_01182023.wav)
 * Example output: [here](https://github.com/yuanchaiyc/website/tree/main/file/ucla_synthesizer_sound)
