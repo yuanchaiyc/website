@@ -17,7 +17,9 @@ suppressMessages(library(knitr))
 
 ***
 ### R script
-* Draw spectrogram and waveform in R
-
+* [Draw spectrogram and waveform in R](subpages/Draw-waveform-and-spectrogram-in-R.html)
+    + [R code online](https://posit.cloud/content/5036221)
+    + [Source code and example files](https://github.com/yuanchaiyc/source-code/tree/main/R-Draw-waveform-spectrogram-pitch)
+    
 ***
 ### Praat script
