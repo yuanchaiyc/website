@@ -17,4 +17,4 @@ My full CV is available [here](file/CV_yuanchai.pdf).
 
 My Resume is available [here](file/Resume_YC.pdf)
 
-My GitHub page is https://github.com/ychaiucsd/source-code.
+My GitHub page is https://github.com/yuanchaiyc/source-code.
