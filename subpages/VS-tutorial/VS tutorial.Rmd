@@ -3,9 +3,13 @@ title: "VoiceSauce tutorial"
 author: "Yuan Chai"
 date: "1/29/2023"
 output: 
-  html_document: 
+  html_document:
     toc: true
+    toc_float: true
+    toc_collapsed: true
     toc_depth: 3
+    number_sections: true
+    theme: lumen
 ---
 
 ```{r setup, include=FALSE}
@@ -17,6 +21,18 @@ library(ggpubr)
 library(scales)
 library(reshape2)
 ```
+
+# What is VoiceSauce
+
+* It is a software for analyzing acoustic parameters of audio files. 
+* Specifically, it can analyze voicing source-related parameters, such as the amplitude of harmonics, spectral tilts, noise level (Harmonic-to-noise ratio, Cepstral Peak Prominence, Subharmonic to Harmonic Ratio), Energy, Strength of Excitation (the amplitude of voicing). 
+* It has the advantage of comparing between different algorithms. For F0, it contains the measures of STRAIGHT, SNACK, and Praat. For formants, it has SNACK and Praat. You can also develop your own algorithm and manually enter values for specific parameter.
+* VoiceSauce output a measure for every 1 millisecond of the audio. You can either output all the values or divide the audio into several equal-timed intervals and output the mean of each interval.
+
+* Citation:
+    
+    + Y.-L. Shue (2010), The voice source in speech production: Data, analysis and models. UCLA dissertation.
+    + Shue, Y.-L., P. Keating , C. Vicenik, K. Yu (2011) VoiceSauce: A program for voice analysis, Proceedings of the ICPhS XVII, 1846-1849.
 
 # To install VoiceSauce
 
@@ -67,10 +83,62 @@ To access the full features of VoiceSauce, please download VoiceSauce.exe (Windo
 
 # How to use VoiceSauce
 
-1. Prepare your file: Put your audio file and TextGrid files in the same folder. The .Textgrid file should have the same name as its corresponding .wav file. Avoid any special characters (e.g. IPA symbols /ə, ɯ/, letters with accents /ä/). You can assign a different letter to the special characters and create a code sheet to keep a record of their correspondence. A sample folder with audio and Textgrid files can be found here.
-2. Under "Common", change "Not a number label" as "NaN".
+## Prepare your .wav and .Textgrid files:
+
+* Put your audio file and TextGrid files in the same folder. 
+    + The .Textgrid file should have the same name as its corresponding .wav file. Avoid any special characters (e.g. IPA symbols /ə, ɯ/, letters with accents /ä/). 
+    + You can assign a different letter to the special characters and create a code sheet to keep a record of their correspondence. 
+    + A sample folder with audio and Textgrid files can be found [here](sample/Indonesian_Stress_Soderberg_Olson_JIPA_2008.zip).
+
+## Settings in VoiceSauce
+
+* Click on "Setting". Under "Common", change "Not a number label" as "NaN".
     + Other parameters that you can adjust:
         - F0: Max/Min F0
         - Formants: Praat Max formant freq; Number of formants;
         - Textgrid: Tier numbers (i.e. if you have multiple tiers in your Textgrid file, which tier you'd like to analyze.)
-2. 
+
+## Parameter estimation
+
+1. Click on "Parameter Estimation"
+2. Under "Input (\*.wav) directory", click "Browse", navigate to the folder where your .wav and .Textgrid files are stored, and click "select folder". You will see a list of the files in that folder in the upper panel of the window.
+3. If you'd like to save the output .mat files in the same folder with the sound, check "Save \*.mat files with \*.wav files". If you'd like a different location, navigate to that location under "Output (\*.mat) directory".
+4. Click "Parameter Selection" and select the parameters you want to estimate. If you do not have Praat installed, deselect F0 (Praat) and Formants (Praat).
+<center>![parametereselection](image/vs_parameter_selection.png){width=40%}</center>
+5. Deselect "Process using 16kHz sampling rate" if that is not what you want. Check "Use .Textgrid segmentation information if available".
+6. Click "Start!" to start the parameter estimation.
+<center>![parameterestimation](image/vs_parameter_estimation.png){width=40%}</center>
+7. After seeing the message "Processing complete", close the window.
+<center>![estimationfinish](image/vs_processing_complete.png){width=40%}</center>
+
+## Output to Text
+1. Click "Output to Text"
+    + Input .mat directory: where you saved the .mat output
+    + Input .Textgrid directory: where you saved the .Textgrid files
+    + Include EGG data: if you have EGG data that you want to include, navigate to the place where you saved .egg files
+    + Output .txt directory: where you want to save the .txt output
+    + Sub-segments:
+        - No sub-segments: output all the data that are measured every 1 millisecond
+        - Use sub-segments: the number of mean intervals you want to have for each target sound. E.g. if you enter "3", it will divide each target sound into three equal-timed intervals and calculate the mean value of each parameter for each interval.
+    + Parameters: select the ones that you want to include in the .txt output
+    + Output Options:
+        - Single file; You can customize the name of the output file under "Output file"
+2. An example output setting where I output H1\*-H2\*, CPP, Energy, HNR05, Formants, SoE and output only the mean for each target sound:
+<center>![outputtext](image/vs_outputtext.png){width=40%}</center>
+3. After finishing the input, click on "Start!"
+
+
+# Analyze the output in Excel
+
+## Open the output.txt in Excel
+* Go to "Data" tab &#8594; "From Text/CSV" &#8594; Navigate to the location where output.txt is saved and select "output.txt"
+* Split the "Label" by go to "Data" tab &#8594; "Delimited" &#8594; Other "-" &#8594; "Next" &#8594; "Finish"
+
+## Create figures
+1. Select the column of interest. For example, in the example data file for the acoustic correlates of Indonesian stress, we will select the columns of "stress_position" and "strF0".
+2. Go to tab "Insert" &#8594; "Chart" &#8594; "Box & Whisker" &#8594; "OK". The figure is as below:
+<center>![samplef0graph](image/vs_samplef0graph.png){width=50%}</center>
+
+
+
+
