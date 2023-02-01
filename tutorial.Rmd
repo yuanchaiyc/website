@@ -13,6 +13,7 @@ suppressMessages(library(knitr))
 ### Software
 ***
 
+* [VoiceSauce](subpages/VS-tutorial.html)
 * [UCLA Voice Synthesizer](subpages/ucla-synthesizer.html)
 
 ***
