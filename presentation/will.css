@@ -206,7 +206,9 @@ audio {
   font-size: var(--r-sub-font-size);
 }
 
-
+.reveal .hide{
+  display: none;
+}
 
 .reveal dt {
   font-weight: bold;
