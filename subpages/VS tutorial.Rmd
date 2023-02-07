@@ -86,7 +86,7 @@ To access the full features of VoiceSauce, please download VoiceSauce.exe (Windo
 ## Prepare your .wav and .Textgrid files:
 
 * Put your audio file and TextGrid files in the same folder. 
-    + The .Textgrid file should have the same name as its corresponding .wav file. Avoid any special characters (e.g. IPA symbols /ə, ɯ/, letters with accents /ä/). 
+    + The .Textgrid file should have the same name as its corresponding .wav file. Avoid any special characters (e.g. IPA symbols /ʔ, ə, ɯ/, letters with diacritics /ä, ã/). 
     + You can assign a different letter to the special characters and create a code sheet to keep a record of their correspondence. 
     + A sample folder with audio and Textgrid files can be found [here](sample/Indonesian_Stress_Soderberg_Olson_JIPA_2008.zip).
 
