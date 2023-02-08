@@ -16,7 +16,7 @@ suppressMessages(library(knitr))
 * VoiceSauce
     + [Tutorial](subpages/VS-tutorial.html)
     + [Sample data](subpages/sample/Hawaiian_data.zip)
-    + [Slides](subpages/sample/Tutorial_VS.pdf)
+    + [Slides](subpages/Tutorial_VS.pdf)
 * [UCLA Voice Synthesizer](subpages/ucla-synthesizer.html)
 
 ***
