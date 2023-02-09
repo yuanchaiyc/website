@@ -97,6 +97,8 @@ backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
 	    68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
 	    88: function() { RevealChalkboard.colorNext() },	// cycle colors forward when 'x' is pressed
 	    89: function() { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
+      40: 'next',
+      38: 'prev'
 	}
 });
 
