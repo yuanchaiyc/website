@@ -20,6 +20,8 @@ library(ggforce)
 library(ggpubr)
 library(scales)
 library(reshape2)
+library(tidyr)
+library(phonR)
 ```
 
 # What is VoiceSauce
@@ -135,10 +137,48 @@ To access the full features of VoiceSauce, please download VoiceSauce.exe (Windo
 * Split the "Label" by go to "Data" tab &#8594; "Delimited" &#8594; Other "-" &#8594; "Next" &#8594; "Finish"
 
 ## Create figures
-1. Select the column of interest. For example, in the example data file for the acoustic correlates of Indonesian stress, we will select the columns of "stress_position" and "strF0".
+1. Select the column of interest. For example, in the example data file for the acoustic correlates of Indonesian stress, we will select the columns of "phonation" and "HNR05_mean".
 2. Go to tab "Insert" &#8594; "Chart" &#8594; "Box & Whisker" &#8594; "OK". The figure is as below:
-<center>![samplef0graph](image/vs_samplef0graph.png){width=50%}</center>
+<center>![samplef0graph](image/vs_hnr_all.png){width=50%}</center>
 
+## Create figures in R
 
+### Read the file
+```{r}
+df = read.csv("sample/Hawaiian_data/output_for_reference/output_mean_selected.txt", header = TRUE, sep = "\t") %>%
+    separate(Label, c("position","vowel","length","phonation"), "-")
+```
 
+### Create boxplot
+```{r}
+df$phonation = factor(df$phonation, levels = c("modal","glottal"))
+
+figure.hnr = df %>%
+  ggplot(aes(x=phonation,y=HNR05_mean, color = phonation))+
+  geom_boxplot()+
+  ylab("HNR")+
+  theme_bw()
+
+print(figure.hnr)
+```
+
+### Create boxplots for different positions in the syllable
+
+```{r}
+
+figure.hnr.byposition = df %>%
+  ggplot(aes(x=phonation,y=HNR05_mean, color = phonation))+
+  geom_boxplot()+
+  ylab("HNR")+
+  facet_grid(.~position)+
+  theme_bw()
+
+print(figure.hnr.byposition)
+```
+
+### Create vowel plot
+
+```{r}
+figure.vowelchart=with(df, plotVowels(sF1_mean, sF2_mean, vowel, group = phonation, plot.tokens = FALSE, plot.means = TRUE, pch.means = vowel, cex.means = 2, var.col.by = phonation, poly.line = TRUE, poly.order = c("e", "a", "o", "u"), pretty = TRUE, legend.kwd = "bottomright"))
+```
 
