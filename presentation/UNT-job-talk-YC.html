@@ -2880,7 +2880,44 @@ Burmese tones
 
 ---
 
+<img src="image/xm_perception_manipulation.png" class = "padding"/><img src="image/xm_perception_pitchtier.png" class = "padding"/>
+<img width = "1000px" src="image/xm_perception_praatscript.png"/>
 
+<audio controls><source src="audio/xm_perception_original_demonstration.wav" type="audio/wav"></audio><audio controls><source src="audio/xm_perception_gl5_demonstration.wav" type="audio/wav"></audio>
+
+
+---
+
+#### H1*-H2*
+
+<img width = "1000px" src="image/h1h2_illustration.png"/>
+
+- H1*-H2* can be noisy
+
+    - Wrong F0 tracking
+    - Wrong formant tracking
+    - Affected by nasal resonance (nasal pole)
+
+- Instead of subtracting H2 as a method of controlling for voicing energy, we control for energy in linear models directly.
+
+---
+
+#### Residual H1*
+
+As dependent variable:
+
+- H1* ~ predictors + RMS Energy
+
+
+- As independent variable:
+
+- H1* = b0 + b1 * RMS Energy
+
+- Residual H1* = H1* - b1 * RMS Energy
+
+
+
+---
 		</textarea>
 		</section>
 			</div>

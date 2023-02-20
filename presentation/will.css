@@ -435,6 +435,12 @@ audio {
 	border-style: none;
 }
 
+.reveal img.padding {
+  margin: 0px 10px;
+  height: 300px;
+  width:auto;
+}
+
 
 .reveal small {
 	font-size: 0.7em;
