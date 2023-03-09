@@ -87,6 +87,6 @@
 <text x='284.43' y='196.41' text-anchor='middle' style='font-size: 10.00px; fill: #4D4D4D; font-family: Arial;' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>T5</text>
 <text x='328.24' y='196.41' text-anchor='middle' style='font-size: 10.00px; fill: #4D4D4D; font-family: Arial;' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>T2</text>
 <text transform='translate(12.64,106.90) rotate(-90)' text-anchor='middle' style='font-size: 10.00px; font-family: Arial;' textLength='60.60px' lengthAdjust='spacingAndGlyphs'>Duration (ms)</text>
-<text x='39.11' y='19.80' style='font-size: 20.00px; font-family: Arial;' textLength='75.60px' lengthAdjust='spacingAndGlyphs'>Duration</text>
+<text x='196.82' y='19.80' text-anchor='middle' style='font-size: 20.00px; font-family: Arial;' textLength='75.60px' lengthAdjust='spacingAndGlyphs'>Duration</text>
 </g>
 </svg>
