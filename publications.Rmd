@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***
 ### Journal articles
+* Chai, Y. & Garellek, M. 2022. On H1–H2 as an acoustic measure of linguistic phonation type. JASA. 152, 1856–1870  [manuscript](file/Chai_Garellek_2022_JASA_preprint.pdf)
 * Chai, Y. & Ye, S. 2022. Checked syllables, checked tones, and tone sandhi in Xiapu Min. Languages. [manuscript](file/XM_checked_tone_YC_YS.pdf)
 * Chai, Y., Kunda, T., Rodríguez, A. & Rose, S. The prosody of declaratives and
 questions in Rere. 2022. In H. Kubozono, J. Ito & A. Mester (Eds.), Prosody and Prosodic Interfaces, Oxford: Oxford University Press. [pre-print](file/Chai_et_al_The_Prosody_of_Questions_in_Rere.pdf)
