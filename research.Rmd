@@ -15,11 +15,11 @@ suppressMessages(library(knitr))
 
 
 ***
-### Fieldwork on San Francisco Yatee Zapotec
+### Fieldwork on San Francisco Yateé Zapotec
 
-San Francisco Yatee Zapotec is spoken in the town of San Francisco Yatee, north of Oaxaca, Mexico. I started the documentation work on Yatee Zapotec in the spring of 2020. I am currently doing fieldwork with two native speakers of Yatee Zapotec. My main goal is to figure out the sound system of Yatee Zapotec while my main focus is on the phonation type, tone, and their interaction in the language.
+San Francisco Yateé Zapotec is spoken in the town of San Francisco Yateé, Sierra Norte, Oaxaca, Mexico. I started the documentation work on Yateé Zapotec in the spring of 2020 in collaboration with two native speakers of Yateé Zapotec, Briseida Mendez and Adrián Fernández. Our goal is to produce a linguistic description of the language from all aspects and to create teaching materials for the language.
 
-Yatee Zapotec has three phonation types: modal, checked, and rearticulated phonations. Checked phonation has late-phased glottalization relative to vowels; rearticulated phonation has mid-phased glottalization relative to vowels. The acoustics of the phonation types in Yatee Zapotec as presented as a [poster](file/Chai_Fernandez_Mendez_ASA_S2023.pdf) at the 184th meeting of Acoustic Society of America in Chicago.
+Yateé Zapotec has three phonation types: modal, checked, and rearticulated phonations. Checked phonation has late-phased glottalization relative to vowels; rearticulated phonation has mid-phased glottalization relative to vowels. The acoustics of the phonation types in Yatee Zapotec as presented as a [poster](file/Chai_Fernandez_Mendez_ASA_S2023.pdf) at the 184th meeting of Acoustic Society of America in Chicago.
 
 A report of the sound inventory of the language has been presented at the [PhonCo group](http://phonco.ucsd.edu/) of the Department of Linguistics at UCSD. [slides](file/phonco_slides_YZ_YC.pdf)
 
