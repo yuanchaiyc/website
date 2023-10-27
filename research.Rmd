@@ -29,6 +29,13 @@ We are committed to build open-accessed data base for the language. We are in co
 <a href="#top">Back to top</a>
 
 ***
+### Acoustics of falsetto voice and breathy voice
+
+While breathy voice and creaky voice has been relatively well-studied, the acoustics of falsetto calls for more investigations. Breathy voice is characterized by having a high amplitude in the fundamental frequency, but low energy in the high frequencies [(Hillenbrand & Houde, 1996)](https://doi.org/10.1044/jshr.3902.311). Houde. Falsetto voice, while perceptually distinct from creaky voice with its characteristically high pitch and "thin" voice quality, has been described as being acoustically very similar to breathy voice. It has a strong fundamental frequency energy, but fewer and weaker high-frequency harmonics ([Colton, 1972](https://doi.org/10.1159/000263588), [1973](https://doi.org/10.1159/000263714); [Neiman, 1997](https://doi.org/10.3109/14015439709075325)). Collaborating with Professor Patricia Keating, we annotated the phonation of the vowels in a corpus with people narrating the [Little Red Riding Hood story](http://www.phonetics.ucla.edu/voiceproject/voice.html) with breathy and falsetto voices. Some of our findings are contrary to the literature: while falsetto voice indeed has fewer harmonics than breathy voice, their high-frequency energy is actually stronger than modal and breathy voices. 
+
+
+***
+
 ### Acoustics of creaky voice
 
 "Creaky voice" refers to a number of different kinds of voice production with similar percepts. Collaborating with Professors Patricia Keating, Marc Garellek, and Jody Kreiman, we study the acoustic properties of different kinds of creaky voice. There are three key properties of creaky voice: low F0, irregular F0, and constricted glottis. Prototypical creaky voice has all three properties. We find that none of the three properties are necessary to create a creaky percept. Low F0 and irregular F0 alone are sufficient to create a creaky percept. The combination of low F0 and irregular F0; and of low F0 and constricted F0 are also sufficient to create a creaky percept.
