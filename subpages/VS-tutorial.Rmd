@@ -62,7 +62,7 @@ To access the full features of VoiceSauce, please download VoiceSauce.exe (Windo
 1. Go to http://www.phonetics.ucla.edu/voicesauce/. Under "Matlab m-code", click on "VoiceSauce.zip" to download it. After download, unzip the VoiceSauce into a regular folder.
 <center>![macinstallpage](image/vs_matlabzip.png){width=50%}</center>
 2. Install Matlab so that we can open VoiceSauce in Matlab:
-* Go to Matlab support at UHM: [here](https://www.mathworks.com/academia/tah-portal/university-of-hawaii-manoa-40591263.html). Click "Sign in to get started". Log in with your UH username and password.
+* Go to Matlab support at UW: [here](https://www.mathworks.com/academia/tah-portal/university-of-washington-31094417.html). Click "Sign in to get started". Log in with your UW username and password.
     + New Users: Create a MathWorks Account. After entering your information, you will be sent an email to verify this account. Log in with your newly created MathWorks Account to download the software.
     + Returning users: Log in with your MathWorks Account information to download the software.
 * After logging into your Matlab account, select "Install MATLAB".  Select "R2022b", click on "Download for macOS". Open "matlab_R2022b_maci64.dmg". The installation will start.
