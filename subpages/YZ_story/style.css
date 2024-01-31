@@ -37,15 +37,17 @@
 
       .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        padding: 10px;
+        grid-template-columns: 22% 22% 22% 17% 17%;
+        padding: 5px;
       }
       .grid-item {
-        padding: 10px;
+        padding: 5px;
         font-size: 18px;
         text-align: left;
       }
 
+      audio {
+        width: 200px;}
 
       .checkboxgroup {
         display: inline-block;
