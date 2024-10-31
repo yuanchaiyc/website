@@ -13,6 +13,12 @@ suppressMessages(library(rmarkdown))
 suppressMessages(library(knitr))
 ```
 
+***
+### Cue weighting in the perception of multi-dimensional contrasts
+
+Contrasts in tone and phonation are frequently multi-dimensional. My research focuses on the independent effect of each acoustic cue in phonetically multi-dimensional contrasts. My study on the effect of glottalization position and duration on the perception of glottalized phonations in Zapotec systematically manipulated the position of glottalization and duration in vowels. The results reveal that the posiiton of glottalization is a more reliable cue than duration in phonation identification in Sierra Norte Zapotec. Rearticulated vowels favor stimuli with modal voicing before and after glottalization, regardless of the relative length of the modal voicing. Checked vowel percept requires glottalization to be at the end of vowel with no following modal portion in the vowel. This study for the first time systematically tested the effect of glottalization position in glottalized phonation perception. This work is presented at Sound System of Latin America (SSLA) 4 and at Study of the Indigenous Languages of the Americas (SSILA) 2025. The manuscript for this study is available [here](file/Chai_2025_Perception_Manuscript.pdf).
+
+<a href="#top">Back to top</a>
 
 ***
 ### Fieldwork on San Francisco Yateé Zapotec
@@ -21,7 +27,7 @@ San Francisco Yateé Zapotec is spoken in the town of San Francisco Yateé, Sier
 
 Yateé Zapotec has three phonation types: modal, checked, and rearticulated phonations. Checked phonation has late-phased glottalization relative to vowels; rearticulated phonation has mid-phased glottalization relative to vowels. The language also has three tones: high, low, falling, and rising. The three phonations and the four tones are fully crossed with each other. We have collected audio and electroglottography data of the minimal/near minimal pairs of all the phonation and tone combinations. Our results are presented at ICPhS 2023. The proceedings are available [here](file/Chai_et_al_2023_ICPhS.pdf).
 
-Besides the phonetics of phonation and tone in Yateé Zapotec, we are also interested in the morphological role of phonation and tone in the language. We found that phonation can be the only difference between imperative clauses and past tense clauses for certain verbs. Our findings will be presented at [SSILA 2024 Annual Meeting](https://www.ssila.org/2024-update). The abstract for the presentation is available [here](file/Chai_et_al_SSILA_abstract.pdf)
+Besides the phonetics of phonation and tone in Yateé Zapotec, we are also interested in the morphological role of phonation and tone in the language. We found that phonation can be the only difference between imperative clauses and past tense clauses for certain verbs. Our findings is presented at [SSILA 2024 Annual Meeting](https://www.ssila.org/2024-update). The abstract for the presentation is available [here](file/Chai_et_al_SSILA_abstract.pdf). The slides are available [here](file/Chai_et_al_2024_SSILA_slides.pdf).
 
 We are committed to build open-accessed data base for the language. We are in construction of a [Living Dictionary](https://livingdictionaries.app/san-francisco-yatee-zapo/entries/list) of the language. Each entry in the dictionary is annotated with Yateé Zapotec alphabet, IPA transcription, and Spanish and English glosses, accompanied by audio recordings from the community members.
 

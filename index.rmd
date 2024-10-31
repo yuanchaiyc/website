@@ -7,7 +7,7 @@ title: "Yuan Chai [ɥɛn˩˥ ʈʂʰai˩˥] 柴媛"
 <img src="image/photo_yuanchai.jpg" style="width:25%; margin-right: 20px" align="left">
 
 
-I'm a Ph.D. in linguistics from UC San Diego. I am currently a post-doctoral fellow at the University of Washington under the supervision of [Professor Richard Wright](https://linguistics.washington.edu/people/richard-wright). My research interests are in language documentation, voice quality, and second language acquisition. 
+I'm a Ph.D. in linguistics from UC San Diego. I am currently a post-doctoral fellow at the University of Washington under the supervision of [Professor Richard Wright](https://linguistics.washington.edu/people/richard-wright). My research interests are in language documentation and voice quality. 
 
 Email: yuanchai@uw.edu
 
