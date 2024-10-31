@@ -37,7 +37,11 @@ questions in Rere. 2022. In H. Kubozono, J. Ito & A. Mester (Eds.), Prosody and 
 ***
 
 ### Conference presentations
-* Chai, Y., Fernández, A. & Mendez, B. 01/2024. The role of phonation and tone in TAM in Yateé Zapotec. SSILA 2024. [abstract](file/Chai_et_al_SSILA_abstract.pdf)
+* Chai, Y. 1/2025. Perception of checked and rearticulated phonations: Effect of duration and glottalization phasing. Study of the Indigenous Languages of the Americas. [abstract](file/Chai_2025_SSILA.pdf)
+* Chai, Y. 11/2024. The phonological status of glottalization in Zapotec. Sound Systems of Latin America 4. [abstract](file/Chai_2024_SSLA_GlottalStop.pdf)
+* Chai, Y. 11/2024. Effect of glottalization position and duration in perceiving glottalized phonation in Zapotec. Sound Systems of Latin America 4. [abstract](file/Chai_2024_SSLA_Perception.pdf)
+* Chai, Y. & Keating, P. 11/2024. Reconsidering the formant correction formula in VoiceSauce. 187th Meeting of the Acoustical Society of America. [abstract](file/Chai_Keating_2024_ASA.pdf)
+* Chai, Y., Fernández, A. & Mendez, B. 01/2024. The role of phonation and tone in TAM in Yateé Zapotec. SSILA 2024. [abstract](file/Chai_et_al_SSILA_abstract.pdf) [slides](file/Chai_et_al_2024_SSILA_slides.pdf)
 * Chai, Y. 5/2020 (canceled due to COVID). The role of tone in TAM, verb class, and subject agreement in Rere. ACAL 51. [abstract](file/Chai_ACAL_abstract.pdf)
 * Chai, Y. 8/2019. The source of creak in Mandarin utterances. ICPhS 2019. [slides](file/slides_icphs2019_yc.pdf) [data](https://doi.org/10.17605/OSF.IO/XR8D7)
 * Chai, Y. 2/2018. Less proficient, more gestures? BLS 44. [manuscript](file/manuscript_bls_yc.pdf)
@@ -45,6 +49,7 @@ questions in Rere. 2022. In H. Kubozono, J. Ito & A. Mester (Eds.), Prosody and 
 ***
 
 ### Posters
+* Chai, Y., Bhagavatula, P., Wong, S., & Keating, P. 06/2024. Spectral energy properties of non-modal phonations. CorpusPhon.[poster](file/Chai_et_al_2024_CorpusPhon.pdf)
 * Chai, Y., Fernández, A. & Mendez, B. 05/2023. Acoustics of the creaky phonations in Yateé Zapotec. ASA 2023. [poster](file/Chai_et_al_ICPhS2023_poster.pdf)
 * Keating, P., Garellek, M., Kreiman, J. & Chai, Y. 05/2023. Acoustic properties of subtypes of creaky voice. [poster](file/Keating_et_al_ASA_S2023.pdf)
 * Chai, Y., Fernandez, A. & Mendez, B. 05/2023. Acoustics of the creaky phonations in Yateé Zapotec. ASA 2023. [poster](file/Chai_Fernandez_Mendez_ASA_S2023.pdf)
