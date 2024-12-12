@@ -18,6 +18,7 @@ suppressMessages(library(knitr))
     + [Sample data](subpages/sample/Hawaiian_data.zip)
     + [Slides](subpages/Tutorial_VS.pdf)
 * [UCLA Voice Synthesizer](subpages/ucla-synthesizer.html)
+* [Electroglottography](subpages/Electroglottography tutorial_YC.pdf)
 
 ***
 ### R script
