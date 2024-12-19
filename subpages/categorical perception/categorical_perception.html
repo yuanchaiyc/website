@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorical Perception: Ba vs Da</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #myChart {
+            width: 600px !important; /* Slightly larger width */
+            height: 450px !important; /* Increase height to ensure visibility */
+        }
+
+        .correspondence {
+            font-weight: bold;
+            margin-left: 10px;
+            color: #333;
+        }
+
+        #submitButton {
+            margin-top: 20px; /* Add spacing above the button */
+            display: block; /* Ensure the button is displayed properly */
+        }
+    </style>
+</head>
+<body>
+    <h2>Categorical Perception Experiment: Ba vs Da</h2>
+    
+    <p>Select whether you perceive each sound as "ba" or "da". Click the audio button to listen to the sound:</p>
+    <p>Audio retrieved from <a href="https://splab.net/apd/u100/">https://splab.net/apd/u100/</a></p>
+
+    <!-- The form will be dynamically generated -->
+    <form id="perceptionForm"></form>
+
+    <!-- Chart area -->
+    <canvas id="myChart"></canvas>
+
+    <script>
+        // Audio files for each step (in the same directory as this HTML file)
+        const audioFiles = {
+            'step1': 'isolation_Step01.mp3',
+            'step2': 'isolation_Step02.mp3',
+            'step3': 'isolation_Step03.mp3',
+            'step4': 'isolation_Step04.mp3',
+            'step5': 'isolation_Step05.mp3',
+            'step6': 'isolation_Step06.mp3',
+            'step7': 'isolation_Step07.mp3',
+            'step8': 'isolation_Step08.mp3',
+            'step9': 'isolation_Step09.mp3'
+        };
+
+        // Steps in the correct order for plotting (not shuffled)
+        const steps = ['step1', 'step2', 'step3', 'step4', 'step5', 'step6', 'step7', 'step8', 'step9'];
+
+        // Create a shuffled version of the steps for playback
+        const shuffledSteps = [...steps]; // Copy the array
+        shuffle(shuffledSteps);
+
+        // Shuffle function to shuffle the steps array for playback order
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Generate the form dynamically with shuffled audio buttons
+        function generateForm() {
+            const form = document.getElementById('perceptionForm');
+            form.innerHTML = ''; // Clear the form
+            
+            shuffledSteps.forEach((step, index) => {
+                const stepNumber = index + 1; // Display as Sound 1, Sound 2, etc., in the shuffled order
+                
+                // Create form elements dynamically
+                const label = document.createElement('label');
+                label.innerHTML = `Play Sound ${stepNumber}: `;
+                
+                const audioButton = document.createElement('button');
+                audioButton.innerHTML = 'Play Sound';
+                audioButton.type = 'button';
+                audioButton.onclick = () => playAudio(step); // Play the shuffled step's audio
+                
+                const baInput = document.createElement('input');
+                baInput.type = 'radio';
+                baInput.name = step; // Still use the original step name (step1, step2, etc.)
+                baInput.value = 'ba';
+                baInput.id = `${step}_ba`;
+                
+                const baLabel = document.createElement('label');
+                baLabel.setAttribute('for', `${step}_ba`);
+                baLabel.innerHTML = ' Ba ';
+                
+                const daInput = document.createElement('input');
+                daInput.type = 'radio';
+                daInput.name = step;
+                daInput.value = 'da';
+                daInput.id = `${step}_da`;
+                
+                const daLabel = document.createElement('label');
+                daLabel.setAttribute('for', `${step}_da`);
+                daLabel.innerHTML = ' Da ';
+                
+                // Correspondence placeholder for showing original step later
+                const correspondence = document.createElement('span');
+                correspondence.className = 'correspondence';
+                correspondence.id = `correspondence_${step}`;
+                correspondence.innerHTML = ''; // Empty until the button is clicked
+                
+                // Append elements to the form
+                form.appendChild(label);
+                form.appendChild(audioButton);
+                form.appendChild(baInput);
+                form.appendChild(baLabel);
+                form.appendChild(daInput);
+                form.appendChild(daLabel);
+                form.appendChild(correspondence);
+                form.appendChild(document.createElement('br')); // Line break
+            });
+
+            // Add the Submit button dynamically at the end of the form
+            const submitButton = document.createElement('button');
+            submitButton.type = 'button';
+            submitButton.id = 'submitButton';
+            submitButton.innerHTML = 'Submit & Generate Graph';
+            submitButton.onclick = generateGraph;
+
+            form.appendChild(submitButton); // Add the button after all form content
+        }
+
+        // Function to play audio for each shuffled step
+        function playAudio(step) {
+            const audio = new Audio(audioFiles[step]);
+            audio.play();
+        }
+
+        // Function to collect user input, generate the graph, and display the step correspondence
+        function generateGraph() {
+            const form = document.getElementById("perceptionForm");
+            const selections = [];
+            
+            // Iterate through the original steps (not shuffled) to map selections correctly
+            steps.forEach((step) => {
+                const choice = form[step].value;
+                if (choice === "ba") {
+                    selections.push(0); // Ba on lower end of y-axis
+                } else if (choice === "da") {
+                    selections.push(1); // Da on higher end of y-axis
+                } else {
+                    selections.push(null); // If nothing selected
+                }
+            });
+
+            // Check if the form is complete
+            if (selections.includes(null)) {
+                alert("Please select Ba or Da for all sounds.");
+                return;
+            }
+
+            // Generate the graph
+            var ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6', 'Step 7', 'Step 8', 'Step 9'], // X-axis for original steps
+                    datasets: [{
+                        data: selections, // Y-axis: Ba = 0, Da = 1
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        pointRadius: 8, // Larger circles for better visibility
+                        fill: false,
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false, // Remove the legend
+                        },
+                    },
+                    responsive: false, // Disable automatic resizing
+                    maintainAspectRatio: false, // Disable default aspect ratio
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 1.1, // Slightly extend beyond 1 to ensure the circles fit fully
+                            ticks: {
+                                callback: function(value) {
+                                    if (value === 0) return 'Ba'; // Label only the bottom
+                                    if (value === 1) return 'Da'; // Label only the top
+                                    return ''; // Skip intermediate labels
+                                }
+                            }
+                        }
+                    },
+                    layout: {
+                        padding: {
+                            top: 80, // Ensure "Da" and top circles are fully visible
+                            bottom: 10,
+                        }
+                    }
+                }
+            });
+
+            // Show step correspondence
+            displayCorrespondence();
+        }
+
+        // Function to show the correspondence of shuffled steps to original steps
+        function displayCorrespondence() {
+            shuffledSteps.forEach((shuffledStep, index) => {
+                const correspondence = document.getElementById(`correspondence_${shuffledStep}`);
+                correspondence.innerHTML = ` (Original: ${shuffledStep})`; // Add original step next to each question
+            });
+        }
+
+        // Generate the form when the page loads
+        window.onload = generateForm;
+    </script>
+</body>
+</html>
