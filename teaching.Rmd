@@ -11,9 +11,10 @@ suppressMessages(library(knitr))
 
 ***
 ### Instructor-of-record
-
-* [Spring 2025](file/TA_evaluation/SP24-450.pdf) LING 450 Introduction to Linguistic Phonetics
-* [Spring 2025](file/TA_evaluation/SP24-471.pdf) LING 471 Computational methods for linguists
+* [Winter 2025](file/TA_evaluation/WI25-450.pdf) LING 450 Introduction to Linguistic Phonetics
+* [Winter 2025](file/TA_evaluation/WI25-453.pdf) LING 453 Experimental Phonetics and Laboratory Phonology
+* [Spring 2024](file/TA_evaluation/SP24-450.pdf) LING 450 Introduction to Linguistic Phonetics
+* [Spring 2024](file/TA_evaluation/SP24-471.pdf) LING 471 Computational Methods for Linguists
 * [Winter 2021](file/TA_evaluation/WI21A-Associate-in.pdf) LIGN 8 Languages and Cultures of America
 
 

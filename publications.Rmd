@@ -38,6 +38,7 @@ questions in Rere. 2022. In H. Kubozono, J. Ito & A. Mester (Eds.), Prosody and 
 ***
 
 ### Conference presentations
+* Chai, Y. 1/2026. Perception of phonations in Zapotec: effect of position and proportion of glottalization. Study of the Indigenous Languages of the Americas.
 * Chai, Y. 1/2025. Perception of checked and rearticulated phonations: Effect of duration and glottalization phasing. Study of the Indigenous Languages of the Americas. [abstract](file/Chai_2025_SSILA.pdf)
 * Chai, Y. 11/2024. The phonological status of glottalization in Zapotec. Sound Systems of Latin America 4. [abstract](file/Chai_2024_SSLA_GlottalStop.pdf)
 * Chai, Y. 11/2024. Effect of glottalization position and duration in perceiving glottalized phonation in Zapotec. Sound Systems of Latin America 4. [abstract](file/Chai_2024_SSLA_Perception.pdf)
@@ -61,6 +62,8 @@ questions in Rere. 2022. In H. Kubozono, J. Ito & A. Mester (Eds.), Prosody and 
 
 ***
 
-### Unpublished manuscript
+### Manuscripts
 
+* Chai, Y. 11/2025. Perception of rearticulated and checked phonations in Sierra Norte Zapotec: the
+effect of glottalization timing and vowel duration. [manuscript](file/Chai_2025_Perception_Manuscript.pdf)
 * Chai, Y. 5/2017. Predicting Discrimination Accuracy of English Vowels by Native-Mandarin Learners. Unpublished master's thesis. University of Colorado Boulder, Boulder, USA. [manuscript](https://escholarship.org/uc/item/44b0m25r)
