@@ -1,0 +1,39 @@
+---
+title: "Meet River!"
+---
+\  
+\  
+
+<div style="text-align: center;">
+
+
+<p style="max-width: 860px; margin: 20px auto; text-align: left;">
+River was born in Tijuana on March 17, 2024. He loves camping, hiking, playing fetch, sleeping and making new dog friends. And of course, he has an unwavering love for treats and any human food he can get.
+</p>
+
+
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+<figure style="text-align: center;">
+  <img src="image/river_1.JPEG" style="width:200px;">
+  <figcaption>in San Bernandino Mountains, CA</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="image/river_2.JPEG" style="width:200px;">
+  <figcaption>in Salt Creek Beach Park, CA</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="image/river_3.JPEG" style="width:200px;">
+  <figcaption>at Huntington Dog Beach, CA</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="image/river_4.JPEG" style="width:200px;">
+  <figcaption>in Skypark At Santa's Village, CA</figcaption>
+</figure>
+
+</div>
+
+</div>

@@ -13,3 +13,5 @@ navbar:
       href: teaching.html
     - text: "Tutorials"
       href: tutorial.html
+    - text: "More"
+      href: "more.html"
