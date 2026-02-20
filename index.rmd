@@ -4,8 +4,10 @@ title: "Yuan Chai [ɥɛn˩˥ ʈʂʰai˩˥] 柴媛"
 \  
 \  
 
-<img src="image/photo_yuanchai.jpg" style="width:25%; margin-right: 20px" align="left">
-
+<div style="float: left; margin-right: 20px; text-align: center;">
+  <img src="image/photo_yuanchai.jpg" style="width:200px;">
+  <div style="font-size: 90%; color: #555;">in Oaxaca, Mexico</div>
+</div>
 
 I'm a Ph.D. in linguistics from UC San Diego. I am currently a post-doctoral fellow in the Department of Psychiatry at UC San Diego under the supervision of [Professor Chuchu Li](https://profiles.ucsd.edu/chuchu.li). My research interests are in language documentation and voice quality. 
 
